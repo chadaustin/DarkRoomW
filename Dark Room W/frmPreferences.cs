@@ -55,11 +55,7 @@ namespace DarkRoom
 
             foreach (XmlNode node in nodes)
             {
-                if (node.Attributes["name"].InnerText == "Contents")
-                {
-                    // suppress this option
-                }
-                else if (node.Attributes["name"].InnerText.Contains("Color"))
+                if (node.Attributes["name"].InnerText.Contains("Color"))
                 {
                     Color tmp = (Color)Properties.Settings.Default[node.Attributes["name"].InnerText];
                     if (tmp.IsNamedColor)
