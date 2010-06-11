@@ -343,30 +343,26 @@ namespace DarkRoomW
 
         private void OpenFile(string file)
         {
+            FileName = file;
+            this.Text = Path.GetFileName(FileName) + " - Dark Room W";
             try
             {
-                if (File.Exists(file))
+                if (txtPage.FormattingEnabled && Path.GetExtension(FileName) == ".rtf")
                 {
-                    FileName = file;
-
-                    if (txtPage.FormattingEnabled && Path.GetExtension(FileName) == ".rtf")
-                    {
-                        txtPage.LoadFile(FileName, RichTextBoxStreamType.RichText);
-                    }
-                    else
-                    {
-                        txtPage.LoadFile(FileName, RichTextBoxStreamType.PlainText);
-                    }
-                                        
-                    this.Text = Path.GetFileName(FileName) + " - Dark Room W";
-                    Sync();
-                    txtPage.Modified = false;
+                    txtPage.LoadFile(FileName, RichTextBoxStreamType.RichText);
+                }
+                else
+                {
+                    txtPage.LoadFile(FileName, RichTextBoxStreamType.PlainText);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+            Sync();
+            txtPage.Modified = false;
         }
 
         private string RecallCacheFile()
