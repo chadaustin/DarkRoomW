@@ -121,7 +121,7 @@ namespace DarkRoomW.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool HideNavigation {
             get {
                 return ((bool)(this["HideNavigation"]));
@@ -145,7 +145,7 @@ namespace DarkRoomW.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool MultipleMonitors {
             get {
                 return ((bool)(this["MultipleMonitors"]));
