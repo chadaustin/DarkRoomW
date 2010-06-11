@@ -770,42 +770,12 @@ namespace DarkRoom
 
         private void txtPage_GotFocus(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.NeutralHighlight)
-            {
-                highlight = Eclectic.GetSysColor(Eclectic.COLOR_HIGHLIGHT);
-                highlightText = Eclectic.GetSysColor(Eclectic.COLOR_HIGHLIGHTTEXT);
-
-                int[] elements = { Eclectic.COLOR_HIGHLIGHT, Eclectic.COLOR_HIGHLIGHTTEXT };
-                int[] colors = { 0, 0 };
-
-                if (txtPage.ForeColor.R > 150 | txtPage.ForeColor.G > 150 | txtPage.ForeColor.B > 150)
-                {
-                    colors[0] = getWin32Color(txtPage.ForeColor, -100);
-                }
-                else
-                {
-                    colors[0] = getWin32Color(txtPage.ForeColor, 100);
-                }
-
-                colors[1] = System.Drawing.ColorTranslator.ToWin32(txtPage.ForeColor);
-
-                Eclectic.SetSysColors(elements.Length, elements, colors);
-            }
-
             blinkRate = Eclectic.GetCaretBlinkTime();
             Eclectic.SetCaretBlinkTime(Properties.Settings.Default.CaretBlinkRate);
         }
 
         private void txtPage_LostFocus(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.NeutralHighlight)
-            {
-                int[] elements = { Eclectic.COLOR_HIGHLIGHT, Eclectic.COLOR_HIGHLIGHTTEXT };
-                int[] colors = { highlight, highlightText };
-
-                Eclectic.SetSysColors(elements.Length, elements, colors);
-            }
-
             Eclectic.SetCaretBlinkTime(blinkRate);
         }
 

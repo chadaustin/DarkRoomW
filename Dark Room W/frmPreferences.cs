@@ -138,7 +138,6 @@ namespace DarkRoom
             trcOpacity.Value = Properties.Settings.Default.Opacity;
             chkMultipleMonitor.Checked = Properties.Settings.Default.MultipleMonitors;
             chkNav.Checked = Properties.Settings.Default.HideNavigation;
-            chkNeutralHighlighting.Checked = Properties.Settings.Default.NeutralHighlight;
 
             // file settings
             chkAutosave.Checked = Properties.Settings.Default.Autosave;
@@ -400,12 +399,6 @@ namespace DarkRoom
                     MessageBox.Show("Invalid Page Margin. You may only use numeric characters totalling less than 100.");
                 }
             }
-        }
-
-        private void chkNeutralHighlighting_CheckedChanged(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.NeutralHighlight = chkNeutralHighlighting.Checked;
-            Properties.Settings.Default.Save();
         }
     }
 }

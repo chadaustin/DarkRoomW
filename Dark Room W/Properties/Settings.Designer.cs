@@ -223,17 +223,5 @@ namespace DarkRoom.Properties {
                 this["CaretBlinkRate"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool NeutralHighlight {
-            get {
-                return ((bool)(this["NeutralHighlight"]));
-            }
-            set {
-                this["NeutralHighlight"] = value;
-            }
-        }
     }
 }

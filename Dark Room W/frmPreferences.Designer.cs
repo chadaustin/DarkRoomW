@@ -69,7 +69,6 @@ namespace DarkRoom
             this.chkAutosave = new System.Windows.Forms.CheckBox();
             this.clrPicker = new System.Windows.Forms.ColorDialog();
             this.fntPicker = new System.Windows.Forms.FontDialog();
-            this.chkNeutralHighlighting = new System.Windows.Forms.CheckBox();
             this.tabPreferences.SuspendLayout();
             this.tabEnvironment.SuspendLayout();
             this.grpGeneral.SuspendLayout();
@@ -118,7 +117,6 @@ namespace DarkRoom
             // 
             // grpGeneral
             // 
-            this.grpGeneral.Controls.Add(this.chkNeutralHighlighting);
             this.grpGeneral.Controls.Add(this.chkMultipleMonitor);
             this.grpGeneral.Controls.Add(this.chkNav);
             this.grpGeneral.Controls.Add(this.trcOpacity);
@@ -493,17 +491,6 @@ namespace DarkRoom
             this.chkAutosave.UseVisualStyleBackColor = true;
             this.chkAutosave.CheckedChanged += new System.EventHandler(this.chkAutosave_CheckedChanged);
             // 
-            // chkNeutralHighlighting
-            // 
-            this.chkNeutralHighlighting.AutoSize = true;
-            this.chkNeutralHighlighting.Location = new System.Drawing.Point(188, 70);
-            this.chkNeutralHighlighting.Name = "chkNeutralHighlighting";
-            this.chkNeutralHighlighting.Size = new System.Drawing.Size(118, 17);
-            this.chkNeutralHighlighting.TabIndex = 6;
-            this.chkNeutralHighlighting.Text = "Neutral Highlighting";
-            this.chkNeutralHighlighting.UseVisualStyleBackColor = true;
-            this.chkNeutralHighlighting.CheckedChanged += new System.EventHandler(this.chkNeutralHighlighting_CheckedChanged);
-            // 
             // frmPreferences
             // 
             this.AcceptButton = this.btnOK;
@@ -579,6 +566,5 @@ namespace DarkRoom
         private System.Windows.Forms.TextBox txtTabstoSpaces;
         private System.Windows.Forms.TextBox txtCursorBlinkTime;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox chkNeutralHighlighting;
     }
 }
