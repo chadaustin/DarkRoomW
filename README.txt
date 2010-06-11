@@ -1,1 +1,2 @@
-First commit, your mileage more vary.
+I love DarkRoom, but I think it's a tad overcomplicated.  This is
+where I will maintain my simplifications.
