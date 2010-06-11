@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DarkRoomW</RootNamespace>
-    <AssemblyName>DarkRoomW</AssemblyName>
+    <AssemblyName>DarkRoom</AssemblyName>
     <StartupObject>DarkRoomW.Program</StartupObject>
     <ApplicationIcon>DarkRoom.ico</ApplicationIcon>
     <FileUpgradeFlags>

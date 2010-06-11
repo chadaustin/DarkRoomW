@@ -33,13 +33,6 @@ namespace DarkRoomW
         public const int COLOR_HIGHLIGHT = 13;
         public const int COLOR_HIGHLIGHTTEXT = 14;
 
-        public enum DataRecoveryModes : int
-        {
-            BUFFER = 0,
-            LAST_FILE = 1,
-            CLEAN = 2
-        }
-
         // scrollbar constants
         public enum ScrollBarActions : int
         {
@@ -84,37 +77,5 @@ namespace DarkRoomW
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern bool SetCaretBlinkTime(uint ms);
-
-        public static string Left(string param, int length)
-        {
-            //we start at 0 since we want to get the characters starting from the
-            //left and with the specified lenght and assign it to a variable
-            string result = param.Substring(0, length);
-            //return the result of the operation
-            return result;
-        }
-        public static string Right(string param, int length)
-        {
-            //start at the index based on the lenght of the sting minus
-            //the specified lenght and assign it a variable
-            string result = param.Substring(param.Length - length, length);
-            //return the result of the operation
-            return result;
-        }
-
-        public static string Mid(string param, int startIndex)
-        {
-            //start at the specified index and return all characters after it
-            //and assign it to a variable
-            string result = param.Substring(startIndex);
-            //return the result of the operation
-            return result;
-        }
-
-        public static string Mid(string param, int startIndex, int length)
-        {
-            string result = param.Substring(startIndex, length);
-            return result;
-        }
     }
 }

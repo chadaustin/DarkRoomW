@@ -462,16 +462,6 @@ namespace DarkRoomW
 
             Sync();
 
-            switch (Properties.Settings.Default.DataRecoveryMode)
-            {
-                case (int) Eclectic.DataRecoveryModes.BUFFER:
-                    txtPage.Text = RecallCache();
-                    break;
-                case (int) Eclectic.DataRecoveryModes.LAST_FILE:
-                    OpenFile(Properties.Settings.Default.LastFileName);
-                    break;
-            }
-
             txtPage.Select(0, 0);
             txtPage.ContextMenuStrip = contextMenuPage;
             txtPage.DetectUrls = txtPage.FormattingEnabled;
@@ -544,10 +534,6 @@ namespace DarkRoomW
                 }
             }
             Properties.Settings.Default.Content = txtPage.Text;
-            if (FileName != "")
-            {
-                Properties.Settings.Default.LastFileName = FileName;
-            }
             Properties.Settings.Default.Save();
             CacheFile();
         }
@@ -960,8 +946,8 @@ namespace DarkRoomW
             StringFormat fmt = new StringFormat(StringFormatFlags.LineLimit);
             Int32 intLinesFilled;
             Int32 intCharsFitted;
-            e.Graphics.MeasureString(Eclectic.Mid(txtPage.Text, intCurrentChar), font, new SizeF(PrintAreaWidth, PrintAreaHeight), fmt, out intCharsFitted, out intLinesFilled);
-            e.Graphics.DrawString(Eclectic.Mid(txtPage.Text, intCurrentChar), font, Brushes.Black, rectPrintingArea, fmt);
+            e.Graphics.MeasureString(txtPage.Text.Substring(intCurrentChar), font, new SizeF(PrintAreaWidth, PrintAreaHeight), fmt, out intCharsFitted, out intLinesFilled);
+            e.Graphics.DrawString(txtPage.Text.Substring(intCurrentChar), font, Brushes.Black, rectPrintingArea, fmt);
             intCurrentChar += intCharsFitted;
             if (intCurrentChar < (txtPage.Text.Length - 1))
             {

@@ -66,9 +66,6 @@ namespace DarkRoomW
             this.chkContextMenu = new System.Windows.Forms.CheckBox();
             this.grpFile = new System.Windows.Forms.GroupBox();
             this.grpDataRecovery = new System.Windows.Forms.GroupBox();
-            this.rdoLoadClean = new System.Windows.Forms.RadioButton();
-            this.rdoLoadLast = new System.Windows.Forms.RadioButton();
-            this.rdoLoadBuffer = new System.Windows.Forms.RadioButton();
             this.chkLaunchFullscreen = new System.Windows.Forms.CheckBox();
             this.chkAutosave = new System.Windows.Forms.CheckBox();
             this.clrPicker = new System.Windows.Forms.ColorDialog();
@@ -480,51 +477,12 @@ namespace DarkRoomW
             // 
             // grpDataRecovery
             // 
-            this.grpDataRecovery.Controls.Add(this.rdoLoadClean);
-            this.grpDataRecovery.Controls.Add(this.rdoLoadLast);
-            this.grpDataRecovery.Controls.Add(this.rdoLoadBuffer);
             this.grpDataRecovery.Location = new System.Drawing.Point(6, 19);
             this.grpDataRecovery.Name = "grpDataRecovery";
             this.grpDataRecovery.Size = new System.Drawing.Size(200, 95);
             this.grpDataRecovery.TabIndex = 4;
             this.grpDataRecovery.TabStop = false;
             this.grpDataRecovery.Text = "Data Recovery";
-            // 
-            // rdoLoadClean
-            // 
-            this.rdoLoadClean.AutoSize = true;
-            this.rdoLoadClean.Location = new System.Drawing.Point(7, 68);
-            this.rdoLoadClean.Name = "rdoLoadClean";
-            this.rdoLoadClean.Size = new System.Drawing.Size(132, 17);
-            this.rdoLoadClean.TabIndex = 2;
-            this.rdoLoadClean.TabStop = true;
-            this.rdoLoadClean.Text = "Load Clean Document";
-            this.rdoLoadClean.UseVisualStyleBackColor = true;
-            this.rdoLoadClean.CheckedChanged += new System.EventHandler(this.rdoLoadClean_CheckedChanged);
-            // 
-            // rdoLoadLast
-            // 
-            this.rdoLoadLast.AutoSize = true;
-            this.rdoLoadLast.Location = new System.Drawing.Point(7, 44);
-            this.rdoLoadLast.Name = "rdoLoadLast";
-            this.rdoLoadLast.Size = new System.Drawing.Size(133, 17);
-            this.rdoLoadLast.TabIndex = 1;
-            this.rdoLoadLast.TabStop = true;
-            this.rdoLoadLast.Text = "Load Last Opened File";
-            this.rdoLoadLast.UseVisualStyleBackColor = true;
-            this.rdoLoadLast.CheckedChanged += new System.EventHandler(this.rdoLoadLast_CheckedChanged);
-            // 
-            // rdoLoadBuffer
-            // 
-            this.rdoLoadBuffer.AutoSize = true;
-            this.rdoLoadBuffer.Location = new System.Drawing.Point(7, 20);
-            this.rdoLoadBuffer.Name = "rdoLoadBuffer";
-            this.rdoLoadBuffer.Size = new System.Drawing.Size(139, 17);
-            this.rdoLoadBuffer.TabIndex = 0;
-            this.rdoLoadBuffer.TabStop = true;
-            this.rdoLoadBuffer.Text = "Load Stored Buffer Text";
-            this.rdoLoadBuffer.UseVisualStyleBackColor = true;
-            this.rdoLoadBuffer.CheckedChanged += new System.EventHandler(this.rdoLoadBuffer_CheckedChanged);
             // 
             // chkLaunchFullscreen
             // 
@@ -625,9 +583,6 @@ namespace DarkRoomW
         private System.Windows.Forms.CheckBox chkLaunchFullscreen;
         private System.Windows.Forms.CheckBox chkAutosave;
         private System.Windows.Forms.GroupBox grpDataRecovery;
-        private System.Windows.Forms.RadioButton rdoLoadClean;
-        private System.Windows.Forms.RadioButton rdoLoadLast;
-        private System.Windows.Forms.RadioButton rdoLoadBuffer;
         private System.Windows.Forms.GroupBox grpAdvanced;
         private System.Windows.Forms.CheckBox chkContextMenu;
         private System.Windows.Forms.ColorDialog clrPicker;

@@ -144,20 +144,6 @@ namespace DarkRoomW
             chkAutosave.Checked = Properties.Settings.Default.Autosave;
             chkLaunchFullscreen.Checked = Properties.Settings.Default.LaunchFullscreen;
 
-            // data recovery settings
-            switch (Properties.Settings.Default.DataRecoveryMode)
-            {
-                case (int)Eclectic.DataRecoveryModes.BUFFER:
-                    rdoLoadBuffer.Checked = true;
-                    break;
-                case (int)Eclectic.DataRecoveryModes.CLEAN:
-                    rdoLoadClean.Checked = true;
-                    break;
-                case (int)Eclectic.DataRecoveryModes.LAST_FILE:
-                    rdoLoadLast.Checked = true;
-                    break;
-            }
-
             // advanced settings
             chkContextMenu.Checked = Properties.Settings.Default.OpenWithContextMenu;
             chkLocalCacheFile.Checked = Properties.Settings.Default.LocalCacheFile;
@@ -320,33 +306,6 @@ namespace DarkRoomW
         {
             Properties.Settings.Default.MultipleMonitors = chkMultipleMonitor.Checked;
             Properties.Settings.Default.Save();
-        }
-
-        private void rdoLoadBuffer_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdoLoadBuffer.Checked)
-            {
-                Properties.Settings.Default.DataRecoveryMode = (int)Eclectic.DataRecoveryModes.BUFFER;
-                Properties.Settings.Default.Save();
-            }
-        }
-
-        private void rdoLoadLast_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdoLoadLast.Checked)
-            {
-                Properties.Settings.Default.DataRecoveryMode = (int)Eclectic.DataRecoveryModes.LAST_FILE;
-                Properties.Settings.Default.Save();
-            }
-        }
-
-        private void rdoLoadClean_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdoLoadClean.Checked)
-            {
-                Properties.Settings.Default.DataRecoveryMode = (int)Eclectic.DataRecoveryModes.CLEAN;
-                Properties.Settings.Default.Save();
-            }
         }
 
         private void chkAutosave_CheckedChanged(object sender, EventArgs e)
