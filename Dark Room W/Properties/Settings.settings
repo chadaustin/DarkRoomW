@@ -23,9 +23,6 @@
     <Setting Name="PagePadding" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10</Value>
     </Setting>
-    <Setting Name="Content" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="HideNavigation" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
@@ -42,9 +39,6 @@
       <Value Profile="(Default)">100</Value>
     </Setting>
     <Setting Name="Autosave" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="LocalCacheFile" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="TabToSpaces" Type="System.Int32" Scope="User">

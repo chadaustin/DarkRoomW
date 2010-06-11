@@ -146,7 +146,6 @@ namespace DarkRoomW
 
             // advanced settings
             chkContextMenu.Checked = Properties.Settings.Default.OpenWithContextMenu;
-            chkLocalCacheFile.Checked = Properties.Settings.Default.LocalCacheFile;
             txtCursorBlinkTime.Text = Properties.Settings.Default.CaretBlinkRate.ToString();
         }
 
@@ -354,12 +353,6 @@ namespace DarkRoomW
                 regKey.Close();
             }
             Properties.Settings.Default.OpenWithContextMenu = chkContextMenu.Checked;
-            Properties.Settings.Default.Save();
-        }
-
-        private void chkLocalCacheFile_CheckedChanged(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.LocalCacheFile = chkLocalCacheFile.Checked;
             Properties.Settings.Default.Save();
         }
 

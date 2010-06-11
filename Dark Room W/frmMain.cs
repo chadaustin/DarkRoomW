@@ -369,18 +369,6 @@ namespace DarkRoomW
             }
         }
 
-        private string RecallCache()
-        {
-            if (Properties.Settings.Default.LocalCacheFile)
-            {
-                return RecallCacheFile();
-            }
-            else
-            {
-                return Properties.Settings.Default.Content;
-            }
-        }
-
         private string RecallCacheFile()
         {
             string cache = "";
@@ -400,16 +388,6 @@ namespace DarkRoomW
                 }
             }
             return cache;
-        }
-
-        private bool CacheFile()
-        {
-            if (Properties.Settings.Default.LocalCacheFile)
-            {
-                SaveFile(Application.StartupPath + "\\CachedContent.dat");
-                return true;
-            }
-            return false;
         }
 
         private bool SaveFile(string fName)
@@ -533,9 +511,7 @@ namespace DarkRoomW
                     e.Cancel = true;
                 }
             }
-            Properties.Settings.Default.Content = txtPage.Text;
             Properties.Settings.Default.Save();
-            CacheFile();
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -755,9 +731,7 @@ namespace DarkRoomW
 
         private void tmrAutosave_Tick(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Content = txtPage.Text;
             Properties.Settings.Default.Save();
-            CacheFile();
             if (Properties.Settings.Default.Autosave & FileName != "")
             {
                 SaveFile();

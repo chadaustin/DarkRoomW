@@ -62,7 +62,6 @@ namespace DarkRoomW
             this.grpAdvanced = new System.Windows.Forms.GroupBox();
             this.txtCursorBlinkTime = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.chkLocalCacheFile = new System.Windows.Forms.CheckBox();
             this.chkContextMenu = new System.Windows.Forms.CheckBox();
             this.grpFile = new System.Windows.Forms.GroupBox();
             this.grpDataRecovery = new System.Windows.Forms.GroupBox();
@@ -415,7 +414,6 @@ namespace DarkRoomW
             // 
             this.grpAdvanced.Controls.Add(this.txtCursorBlinkTime);
             this.grpAdvanced.Controls.Add(this.label3);
-            this.grpAdvanced.Controls.Add(this.chkLocalCacheFile);
             this.grpAdvanced.Controls.Add(this.chkContextMenu);
             this.grpAdvanced.Location = new System.Drawing.Point(6, 194);
             this.grpAdvanced.Name = "grpAdvanced";
@@ -440,17 +438,6 @@ namespace DarkRoomW
             this.label3.Size = new System.Drawing.Size(114, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Cursor Blink Time (ms):";
-            // 
-            // chkLocalCacheFile
-            // 
-            this.chkLocalCacheFile.AutoSize = true;
-            this.chkLocalCacheFile.Location = new System.Drawing.Point(13, 52);
-            this.chkLocalCacheFile.Name = "chkLocalCacheFile";
-            this.chkLocalCacheFile.Size = new System.Drawing.Size(204, 17);
-            this.chkLocalCacheFile.TabIndex = 1;
-            this.chkLocalCacheFile.Text = "Enable Local Cache File for Portability";
-            this.chkLocalCacheFile.UseVisualStyleBackColor = true;
-            this.chkLocalCacheFile.CheckedChanged += new System.EventHandler(this.chkLocalCacheFile_CheckedChanged);
             // 
             // chkContextMenu
             // 
@@ -587,7 +574,6 @@ namespace DarkRoomW
         private System.Windows.Forms.CheckBox chkContextMenu;
         private System.Windows.Forms.ColorDialog clrPicker;
         private System.Windows.Forms.FontDialog fntPicker;
-        private System.Windows.Forms.CheckBox chkLocalCacheFile;
         private System.Windows.Forms.CheckBox chkAudoIndent;
         private System.Windows.Forms.CheckBox chkTabToSpaces;
         private System.Windows.Forms.TextBox txtTabstoSpaces;

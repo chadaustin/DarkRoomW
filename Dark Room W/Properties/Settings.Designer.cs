@@ -109,18 +109,6 @@ namespace DarkRoomW.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Content {
-            get {
-                return ((string)(this["Content"]));
-            }
-            set {
-                this["Content"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool HideNavigation {
             get {
@@ -188,18 +176,6 @@ namespace DarkRoomW.Properties {
             }
             set {
                 this["Autosave"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool LocalCacheFile {
-            get {
-                return ((bool)(this["LocalCacheFile"]));
-            }
-            set {
-                this["LocalCacheFile"] = value;
             }
         }
         
