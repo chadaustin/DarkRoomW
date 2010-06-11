@@ -26,7 +26,7 @@ using System.Configuration;
 using System.Xml;
 using Microsoft.Win32;
 
-namespace DarkRoomW
+namespace DarkRoom
 {
     public partial class frmPreferences : Form
     {
@@ -48,7 +48,7 @@ namespace DarkRoomW
 
         private void CacheSettings() {
             XmlDocument doc = new XmlDocument();
-            doc.Load(Application.StartupPath + "\\DarkRoomW.exe.config");
+            doc.Load(Application.StartupPath + "\\DarkRoom.exe.config");
 
             XmlNodeList nodes;
             nodes = doc.SelectNodes("//setting");
@@ -84,7 +84,7 @@ namespace DarkRoomW
 
             try
             {
-                doc.Save(Application.StartupPath + "\\DarkRoomW.exe.config");
+                doc.Save(Application.StartupPath + "\\DarkRoom.exe.config");
             }
             catch (UnauthorizedAccessException e)
             {
@@ -343,7 +343,7 @@ namespace DarkRoomW
                 regKey.CreateSubKey("command");
                 regKey.Close();
                 regKey = Registry.ClassesRoot.OpenSubKey("*\\Shell\\Open with Dark Room W\\Command", true);
-                regKey.SetValue("", Application.StartupPath + "\\DarkRoomW.exe %1");
+                regKey.SetValue("", Application.StartupPath + "\\DarkRoom.exe %1");
                 regKey.Close();
             }
             else

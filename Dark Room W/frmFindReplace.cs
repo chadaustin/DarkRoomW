@@ -23,7 +23,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace DarkRoomW
+namespace DarkRoom
 {
     public partial class frmFindReplace : Form
     {

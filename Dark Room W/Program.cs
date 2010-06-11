@@ -19,7 +19,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace DarkRoomW
+namespace DarkRoom
 {
     static class Program
     {

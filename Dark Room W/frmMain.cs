@@ -26,7 +26,7 @@ using System.IO;
 using System.Drawing.Printing;
 using System.Text.RegularExpressions;
 
-namespace DarkRoomW
+namespace DarkRoom
 {
     public partial class frmMain : Form
     {

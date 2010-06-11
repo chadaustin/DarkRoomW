@@ -1,4 +1,4 @@
-namespace DarkRoomW
+namespace DarkRoom
 {
     partial class frmMain
     {
@@ -91,7 +91,7 @@ namespace DarkRoomW
             this.dlgPageSetup = new System.Windows.Forms.PageSetupDialog();
             this.dlgPrint = new System.Windows.Forms.PrintDialog();
             this.prtDoc = new System.Drawing.Printing.PrintDocument();
-            this.txtPage = new DarkRoomW.DarkTextBox(this.components);
+            this.txtPage = new DarkRoom.DarkTextBox(this.components);
             this.mnuMenuStrip.SuspendLayout();
             this.pnlPage.SuspendLayout();
             this.contextMenuPage.SuspendLayout();

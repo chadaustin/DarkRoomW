@@ -23,7 +23,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Drawing;
 
-namespace DarkRoomW
+namespace DarkRoom
 {
     public partial class DarkTextBox : System.Windows.Forms.RichTextBox 
     {

@@ -22,7 +22,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Reflection;
 
-namespace DarkRoomW
+namespace DarkRoom
 {
     partial class frmAbout : Form
     {

@@ -8,9 +8,9 @@
     <ProjectGuid>{6885B474-D37B-4D15-9DAA-0479E20F16A5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DarkRoomW</RootNamespace>
+    <RootNamespace>DarkRoom</RootNamespace>
     <AssemblyName>DarkRoom</AssemblyName>
-    <StartupObject>DarkRoomW.Program</StartupObject>
+    <StartupObject>DarkRoom.Program</StartupObject>
     <ApplicationIcon>DarkRoom.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>

@@ -15,7 +15,7 @@
  * @license    Open Software License (OSL 3.0), http://opensource.org/licenses/osl-3.0.php  
  */
  
- namespace DarkRoomW
+ namespace DarkRoom
 {
     partial class frmStatistics
     {

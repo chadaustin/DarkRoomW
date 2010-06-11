@@ -21,7 +21,7 @@ using System.Text;
 using System.Runtime.InteropServices;
 using System.Xml;
 
-namespace DarkRoomW
+namespace DarkRoom
 {
     class Eclectic
     {

@@ -1,4 +1,4 @@
-namespace DarkRoomW
+namespace DarkRoom
 {
     partial class frmAbout
     {
