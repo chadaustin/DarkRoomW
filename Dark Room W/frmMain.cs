@@ -985,23 +985,5 @@ namespace DarkRoomW
         {
             System.Diagnostics.Process.Start(Properties.Settings.Default.DarkRoomURL);
         }
-
-        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string latest = Eclectic.CheckForUpdate();
-
-            if (latest == System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString())
-            {
-                MessageBox.Show("Your version of Dark Room W is up to date.", "Update", MessageBoxButtons.OK);
-            }
-            else
-            {
-                DialogResult response = MessageBox.Show("A new version (" + latest + ") of Dark Room W is available.\n\nWould you like to download it?", "New Version Available", MessageBoxButtons.YesNo);
-                if (response == DialogResult.Yes)
-                {
-                    System.Diagnostics.Process.Start(Properties.Settings.Default.DarkRoomURL);
-                }
-            }
-        }
     }
 }

@@ -116,37 +116,5 @@ namespace DarkRoomW
             string result = param.Substring(startIndex, length);
             return result;
         }
-
-        public static string CheckForUpdate()
-        {
-            string latest = "";
-            string URLString = Properties.Settings.Default.UpdateURL;
-
-            try
-            {
-                XmlTextReader reader = new XmlTextReader(URLString);
-
-                while (reader.Read())
-                {
-                    switch (reader.NodeType)
-                    {
-                        case XmlNodeType.Element: // The node is an element.
-                            break;
-                        case XmlNodeType.Text: //Display the text in each element.
-                            latest = reader.Value.Trim();
-                            break;
-                        case XmlNodeType.EndElement: //Display the end of the element.
-                            break;
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                System.Windows.Forms.MessageBox.Show(e.Message);
-            }
-
-            return latest;
-        }
-
     }
 }

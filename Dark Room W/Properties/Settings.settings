@@ -62,9 +62,6 @@
     <Setting Name="DarkRoomURL" Type="System.String" Scope="Application">
       <Value Profile="(Default)">http://they.misled.us/dark-room/</Value>
     </Setting>
-    <Setting Name="UpdateURL" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://jjafuller.com/apps/dark_room/version.xml</Value>
-    </Setting>
     <Setting Name="CaretBlinkRate" Type="System.UInt32" Scope="User">
       <Value Profile="(Default)">530</Value>
     </Setting>

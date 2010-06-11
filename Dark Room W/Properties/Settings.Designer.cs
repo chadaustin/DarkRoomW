@@ -260,15 +260,6 @@ namespace DarkRoomW.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://jjafuller.com/apps/dark_room/version.xml")]
-        public string UpdateURL {
-            get {
-                return ((string)(this["UpdateURL"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("530")]
